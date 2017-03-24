@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 @font-face {
     font-family: opens;
@@ -18,4 +19,177 @@
 }
 h1 {
     font-family: rock;
+}
+@vang : #f2ebbf;
+@do :  #f06060;
+@nau : #5c4b51;
+@xam : #f2f2f2;
+@white : #fff;
+@cam  : #f3b562;
+.fonto(@px) {
+    font-family: opens;
+    font-size: @px;
+}
+.bovien {
+    border-radius: 6px;
+}
+.diss {
+    all:unset;
+}
+.fontb(@px) {
+    font-family: roboto;
+    font-size: @px;
+}
+.fontr(@px) {
+    font-family: rock;
+    font-size: @px;
+}
+@media (max-width: 991px) {
+    body {
+        .tm1 ul li span {
+        top: -247px!important;
+    }
+    }
+    
+}
+@media (max-width: 1199px) {
+    body {
+        .tm1 ul li span {
+        top: -308px;
+    }
+    }
+}
+.tm {
+    .tn1 {
+        width: 100%;
+        height: 5px;
+        background-color: @nau;
+        position: relative;
+        top: -3px;
+    }
+    height: 60px;
+    width: 100%;
+    background-color: @vang;
+    .row {
+        ul {
+            li {
+                &:nth-child(1) {
+                float: left;
+                margin-right: 20px;
+            a {
+            &:hover {
+                text-decoration: none;
+            }
+                &:focus,&:active {
+                    text-decoration: none;
+                }
+            p {
+                .fonto(20px);
+                color: @do;
+                font-weight: 700;
+                margin-top: 15px;
+            }
+                }
+                }
+                &:nth-child(2) {
+                    .fontb(14px);
+                    padding-top: 20px;
+                }
+            }
+//            end li
+            &:nth-child(2) {
+                display: inline-block;
+                margin: 26px 0 0;
+                li {
+                    float: left;
+                    .diss;
+                    margin:0 20px 0 0;
+                    .fonto (18px);
+                    color: @cam;
+                    a,a:focus, a:active, a:hover {
+                        text-decoration: none;
+                        color: @cam;
+                    }
+                }
+            } 
+        }
+    }
+}
+.tm1 {
+    ul {
+        li {
+            height: 260px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            span {
+                .fontr(20px);
+                position: relative;
+                top: -395px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.tm2 {
+    background-color: @do;
+    height: 60px;
+    position: relative;
+    top: -10px;
+    .tn1 {
+        text-align: center;
+        color: @white;
+        .fonto(14px);
+        margin: 7px 0;
+    }
+    .tn2 {
+        width: 100%;
+        height: 33px;
+        .bovien;
+        border: 2px solid @white;
+        margin-top: 10px;
+        a {
+            text-align: center;
+            display: block;
+            padding-top: 4px;
+            &, &:hover, &:focus, &:active {
+                color: @white;
+                text-decoration: none;
+                .fonto(14px);
+            }
+        }
+    }
+}
+.tm3 {
+    .tn1 {
+        .fontr(20px);
+        margin-top: 15px;
+    }
+    .tn2 {
+        ul {
+            margin-top: 15px;
+            li {
+                width: 100%;
+                &:nth-child(1) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                &:nth-child(2) {
+                    text-align: center;
+                    .fonto(16px);
+                    margin-top: 15px;
+                }
+                &:nth-child(3) {
+                    .fontb(16px);
+                    text-align: center;
+                    color: @do;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
 }
