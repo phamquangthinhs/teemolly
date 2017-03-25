@@ -1,0 +1,21 @@
+@vang : #f2ebbf;
+@do :  #f06060;
+@nau : #5c4b51;
+@xam : #f2f2f2;
+@white : #fff;
+@cam  : #f3b562;
+.fonto(@px) {
+    font-family: opens;
+    font-size: @px;
+}
+.bovien {
+    border-radius: 6px;
+}
+.fontb(@px) {
+    font-family: roboto;
+    font-size: @px;
+}
+.fontr(@px) {
+    font-family: rock;
+    font-size: @px;
+}

@@ -20,6 +20,7 @@
 h1 {
     font-family: rock;
 }
+@den : #464646;
 @vang : #f2ebbf;
 @do :  #f06060;
 @nau : #5c4b51;
@@ -33,9 +34,6 @@ h1 {
 .bovien {
     border-radius: 6px;
 }
-.diss {
-    all:unset;
-}
 .fontb(@px) {
     font-family: roboto;
     font-size: @px;
@@ -48,7 +46,10 @@ h1 {
     body {
         .tm1 ul li span {
         top: -247px!important;
-    }
+        }
+        .tm .row ul:nth-child(2) li {
+        margin: -12px 20px 18px 0;
+        }
     }
     
 }
@@ -101,8 +102,8 @@ h1 {
                 display: inline-block;
                 margin: 26px 0 0;
                 li {
+                    padding: 0;
                     float: left;
-                    .diss;
                     margin:0 20px 0 0;
                     .fonto (18px);
                     color: @cam;
@@ -150,7 +151,7 @@ h1 {
         height: 33px;
         .bovien;
         border: 2px solid @white;
-        margin-top: 10px;
+        margin-top: 12px;
         a {
             text-align: center;
             display: block;
@@ -170,7 +171,7 @@ h1 {
     }
     .tn2 {
         ul {
-            margin-top: 15px;
+            margin: 15px 0 30px;
             li {
                 width: 100%;
                 &:nth-child(1) {
@@ -189,6 +190,34 @@ h1 {
                     color: @do;
                     margin-top: 15px;
                 }
+            }
+        }
+    }
+}
+.tm4 {
+    background-color: @xam;
+    .tn1 {
+        height: 198px;
+        width: 100%;
+        position: relative;
+        background-color: @vang;
+        margin: 30px 0 30px;
+        .bovien;
+        img {
+            
+        }
+        .tn2 {
+            position: absolute;
+            bottom: 0;
+            height: 41px;
+            width: 100%;
+            background-color: @white;
+            .bovien;
+            p {
+                .fontb(16px);
+                color: @den;
+                text-align: center;
+                padding-top: 10px;
             }
         }
     }
