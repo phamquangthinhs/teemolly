@@ -4,6 +4,7 @@
 @xam : #f2f2f2;
 @white : #fff;
 @cam  : #f3b562;
+@den : #464646;
 .fonto(@px) {
     font-family: opens;
     font-size: @px;
@@ -19,3 +20,4 @@
     font-family: rock;
     font-size: @px;
 }
+
