@@ -53,6 +53,11 @@ h1 {
 
 @media (max-width: 991px) {
     body {
+        .tm11 .tn2 {
+            &:nth-child(n+2) {
+                margin-top: 30px;
+            }
+        }
         .tm1 ul li span {
             top: -247px!important;
         }
@@ -347,12 +352,16 @@ body {
 }
 
 .tm10 {
+    .tn.tn3 {
+        margin-top: 30px;
+        height: 262px;
+    }
     .tn {
         width: 100%;
         height: 330px;
         overflow: hidden;
         position: relative;
-        margin-top: 10px;
+        margin-top: 20px;
         .tn1 {
             width: 100%;
             position: absolute;
@@ -368,12 +377,13 @@ body {
             padding: 0 30px;
             ul {
                 li {
-                    a, &:focus {
+                    a,
+                    &:focus {
                         text-decoration: none;
                         color: @den;
                         &:hover {
                             color: @do;
-                        } 
+                        }
                     }
                     &:nth-child(1) {
                         .fontr(14px);
@@ -384,10 +394,61 @@ body {
                         .fontb(14px);
                         color: @do;
                         text-transform: uppercase;
-                        margin-top: 15px;
+                        margin-top: 10px;
                     }
                 }
             }
+        }
+    }
+    .tn4 {
+        margin-top: 20px;
+        position: initial!important;
+        padding: 0!important;
+        .tm10.tn.tn2;
+        ul {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.tm11 {
+    background-color: @xam;
+    margin: 30px 0 0;
+    padding: 30px 0 30px;
+    .tn {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            min-height: 100%;
+        }
+        &:nth-child(n+2) {
+            margin-top: 30px;
+        }
+    }
+    .tn1 {
+        ul {
+            li {
+                a,
+                &:focus {
+                    text-decoration: none;
+                    color: @do;
+                    &:hover {
+                        color: @vang;
+                    }
+                }
+                &:nth-child(1) {
+                    .fontr(14px);
+                    text-transform: uppercase;
+                }
+                &:nth-child(2) {}
+            }
+        }
+    }
+    .tn2 {
+        &:nth-child(n+3) {
+            margin-top: 30px;
         }
     }
 }
