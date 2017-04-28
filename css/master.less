@@ -53,6 +53,15 @@ h1 {
 
 @media (max-width: 991px) {
     body {
+        .tm23 ul li span {
+            top: -257px !important;
+        }
+        .tm25 ul li span {
+            top: -226px !important;
+        }
+        .tm26 .tn1 {
+            height: 220px !important;
+        }
         .tm16 {
             height: 250px;
         }
@@ -89,6 +98,12 @@ h1 {
 
 @media (max-width: 1199px) {
     body {
+        .tm23 ul li span {
+            top: -323px!important;
+        }
+        .tm26 .tn1 {
+            height: 138px;
+        }
         .tm1 ul li span {
             top: -308px;
         }
@@ -656,32 +671,6 @@ body {
     }
 }
 
-// new css
-@media (max-width: 1199px) {
-    body {
-        .tm23 ul li span {
-            top: -323px!important;
-        }
-        .tm26 .tn1 {
-            height: 138px;
-        }
-    }
-}
-
-@media (max-width: 991px) {
-    body {
-        .tm23 ul li span {
-            top: -257px !important;
-        }
-        .tm25 ul li span {
-            top: -226px !important;
-        }
-        .tm26 .tn1 {
-            height: 220px !important;
-        }
-    }
-}
-
 .tm22 {
     background-color: @xam;
     .tn1 {
@@ -779,7 +768,6 @@ body {
     }
 }
 
-//new css
 .tm29 {
     .tn1 {
         .tm3 .tn1;
@@ -816,6 +804,36 @@ body {
         img {
             margin-top: 20px;
             width: 100%;
+        }
+    }
+}
+
+//new css 
+.tm31 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    background-color: @white;
+    border-bottom: 1px solid @den;
+    .tn1 {
+        color: @den;
+        .fontr(20px);
+    }
+}
+.tm32 {
+    .tn1 {
+        ul {
+            margin-top: 30px;
+            li {
+                &:nth-child(1) {
+                    .fontb(16px);
+                    color: @den;
+                }
+                &:nth-child(2) {
+                    .fonto(16px);
+                    color: @den;
+                    margin: 5px 0 0 15px;
+                }
+            }
         }
     }
 }
