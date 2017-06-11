@@ -13,14 +13,14 @@ ct2 = """</div>
 <div class="col-lg-12 col-md-12 col-xs-12">
 <div class="tn1">
 <ul>
- 	<li><a href="#.">Fishing</a></li>
- 	<li><a href="#.">Jobs</a></li>
- 	<li><a href="#.">Gym </a></li>
- 	<li><a href="#.">Family</a></li>
- 	<li><a href="#.">Yoga</a></li>
- 	<li><a href="#.">Pets</a></li>
- 	<li><a href="#.">Sports</a></li>
- 	<li><a href="#.">MISC</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=69">Fishing</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=107">Jobs</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=113">Gym </a></li>
+ 	<li><a href="http://teemolly.com/?page_id=115">Family</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=119">Yoga</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=123">Pets</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=127">Sports</a></li>
+ 	<li><a href="http://teemolly.com/?page_id=129">MISC</a></li>
 </ul>
 </div>
 </div>
