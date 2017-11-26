@@ -40,6 +40,9 @@ h1 {
 .bovien {
     border-radius: 6px;
 }
+.muhi {
+    background-color: @do;
+}
 
 .fontb(@px) {
     font-family: roboto;
@@ -51,8 +54,103 @@ h1 {
     font-size: @px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
     body {
+        .tm8 {
+            .tn4 {
+                    display: none;
+            }
+        }
+        .tm {
+            .row {
+                ul {
+                    &:nth-child(3) {
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+
+        }
+        .tm30 {
+            .tn4 {
+                margin-top: 20px;
+            }
+        }
+          .tm2 {
+            .tn2 {
+                height: 40px;
+                a {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        .tm8 {
+            .tn4 {
+                    display: none;
+            }
+        }
+        .tm1 {
+            ul {
+                li {
+                    span {
+                        top: -195px;
+                    }
+                }
+            }
+        }
+        .tm2 {
+            .tn2 {
+                height: 40px;
+                a {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                }
+            }
+        }
+        .tm30 {
+            .tn4 {
+                margin-top: 20px;
+            }
+        }
+        .tm {
+            .tn1 {
+                top: 0;
+                margin: 20px 0 0;
+
+            }
+            height: inherit;
+            .container .row ul li:nth-child(2) {
+                display: block;
+            }
+            .row {
+                ul {
+                    display: inherit;
+                    &:nth-child(3) {
+                        margin: 0 0 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        .tm .row ul li:nth-child(2) {
+            display: none;
+        }
+        .tm .row ul:nth-child(3) {
+            margin: 20px 0 0;
+        }
+        .tm30 .tn4 {
+            margin-top: 30px;
+        }
         .tm23 ul li span {
             top: -257px !important;
         }
@@ -66,6 +164,7 @@ h1 {
             height: 250px;
         }
         .tm4 .tn3 {
+            margin-top: 15px;
             margin-bottom: 15px;
             &:nth-child(n+2) {
                 margin-top: 15px;
@@ -89,20 +188,22 @@ h1 {
         }
         .tm4 .tn1 {
             img {
-                width: 20%;
+                width: 50%;
                 padding-top: 20px!important;
             }
         }
     }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     body {
-        .tm23 ul li span {
-            top: -323px!important;
-        }
-        .tm26 .tn1 {
-            height: 138px;
+        body {
+            .tm23 ul li span {
+                top: -323px!important;
+            }
+            .tm26 .tn1 {
+                height: 138px;
+            }
         }
         .tm1 ul li span {
             top: -308px;
@@ -116,16 +217,16 @@ h1 {
 .tm {
     .tn1 {
         width: 100%;
-        height: 5px;
+        height: 3px;
         background-color: @nau;
         position: relative;
-        top: -3px;
     }
-    height: 60px;
     width: 100%;
     background-color: @vang;
     .row {
         ul {
+            margin-bottom: 0;
+            display: inherit;
             li {
                 &:nth-child(1) {
                     float: left;
@@ -150,9 +251,8 @@ h1 {
                     .fontb(14px);
                     padding-top: 20px;
                 }
-            }
-            //            end li
-            &:nth-child(2) {
+            } //            end li
+            &:nth-child(3) {
                 display: inline-block;
                 margin: 26px 0 0;
                 li {
@@ -176,8 +276,9 @@ h1 {
 
 .tm1 {
     ul {
+        margin-bottom: 0;
         li {
-            height: 260px;
+            max-height: 260px;
             overflow: hidden;
             width: 100%;
             position: relative;
@@ -186,7 +287,7 @@ h1 {
             }
             span {
                 .fontr(20px);
-                position: relative;
+                position: absolute;
                 top: -395px;
                 text-transform: uppercase;
             }
@@ -196,25 +297,25 @@ h1 {
 
 .tm2 {
     background-color: @do;
-    height: 60px;
-    position: relative;
-    top: -10px;
+    padding-bottom: 15px;
     .tn1 {
         text-align: center;
         color: @white;
         .fonto(14px);
         margin: 7px 0;
+        padding-top: 7px;
     }
     .tn2 {
-        width: 100%;
         height: 33px;
         .bovien;
-        border: 2px solid @white;
-        margin-top: 12px;
+        border: 1px solid @white;
+        margin-top: 21px;
+        padding: 0 30px;
         a {
             text-align: center;
             display: block;
             padding-top: 4px;
+            text-transform: inherit;
             &,
             &:hover,
             &:focus,
@@ -230,7 +331,7 @@ h1 {
 .tm3 {
     .tn1 {
         .fontr(20px);
-        margin-top: 15px;
+        margin-top: 24px;
     }
     .tn2 {
         ul {
@@ -249,6 +350,7 @@ h1 {
                 &:nth-child(1) {
                     img {
                         width: 100%;
+                        height: inherit;
                     }
                 }
                 &:nth-child(2) {
@@ -342,7 +444,8 @@ body {
         img {
             height: 105px;
             display: inline-block;
-            margin-top: 30px;
+            margin: 30px 0;
+            .bovien;
         }
         span {
             .fontr(20px);
@@ -359,7 +462,7 @@ body {
         margin: 30px 60px 0 0;
         .tn3 {
             &:nth-child(1) {
-                .fonto(14px);
+                .fontb(14px);
                 color: @white;
                 text-transform: uppercase;
             }
@@ -674,7 +777,7 @@ body {
 .tm22 {
     background-color: @xam;
     .tn1 {
-        ul>li {
+        ul > li {
             a {
                 color: @do;
             }
@@ -706,7 +809,8 @@ body {
         top: -228px!important;
     }
     img {
-        .tm23;
+        width: 100%;
+        min-height: 100%;
     }
 }
 
@@ -792,7 +896,7 @@ body {
 .tm30 {
     margin-top: 30px;
     background-color: @xam;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     .tn1 {
         .tm29 .tn1;
     }
@@ -804,6 +908,21 @@ body {
         img {
             margin-top: 20px;
             width: 100%;
+        }
+    }
+    .tn4 {
+        label {
+            .fonto(16px);
+            font-weight: 400;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type=submit] {
+            padding: 7px 17px;
+            background-color: @do;
+            color: @white;
+            border: 0;
         }
     }
 }
@@ -839,6 +958,7 @@ body {
 }
 
 .tm33 {
+    margin-top: 50px;
     .tn1 {
         .fontr(20px);
         color: @do;
@@ -851,4 +971,14 @@ body {
             margin-top: 20px;
         }
     }
+}
+
+.tm34 {
+    .fonto(20px);
+    .tn1 {
+        .fonto(20px);
+        color: @den;
+        text-transform: uppercase;
+    }
+
 }

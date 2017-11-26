@@ -58,7 +58,7 @@ ct5 = """</li>
 <div class="tm18">
 <div class="tn1">
 
-Want to find out more information and buy it, click on "Buy it now" you will be redirected to another site (<a href="#.">Why?</a>)
+Want to find out more information and buy it, click on "Buy it now" you will be redirected to another site (<a href="http://teemolly.com/?page_id=16">Why?</a>)
 
 </div>
 <div class="tn2"><a href=\""""
